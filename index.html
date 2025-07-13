@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Portfolio - Photo & Video Editing Expert</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Creative</span>
+                <span class="logo-accent">Portfolio</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1 class="hero-title">
+                    Creative <span class="highlight">Visual Artist</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Transforming visions into stunning visuals through expert photo editing, 
+                    video production, and graphic design
+                </p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual" data-aos="fade-left">
+                <div class="floating-elements">
+                    <div class="floating-icon" style="--delay: 0s">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <div class="floating-icon" style="--delay: 1s">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <div class="floating-icon" style="--delay: 2s">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="floating-icon" style="--delay: 3s">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>About Me</h2>
+                <p>Passionate about creating visual stories that captivate and inspire</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h3>Creative Professional</h3>
+                    <p>
+                        I'm a dedicated visual artist with years of experience in transforming 
+                        raw content into compelling visual narratives. My expertise spans across 
+                        photo editing, video production, and graphic design, allowing me to 
+                        deliver comprehensive creative solutions.
+                    </p>
+                    <p>
+                        With mastery in Adobe Creative Suite including Illustrator, After Effects, 
+                        and Premiere Pro, I bring technical precision and artistic vision to every project. 
+                        Whether it's retouching portraits, creating dynamic video content, or designing 
+                        stunning graphics, I ensure each piece tells a story and leaves a lasting impact.
+                    </p>
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-number">350+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">11+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">95%</span>
+                            <span class="stat-label">Client Satisfaction</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image" data-aos="fade-left">
+                    <div class="image-placeholder">
+                        <i class="fas fa-user"></i>
+                        <p>Your Photo Here</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Portfolio</h2>
+                <p>Showcasing my best work across different creative disciplines</p>
+            </div>
+            
+            <!-- Portfolio Filters -->
+            <div class="portfolio-filters" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All Work</button>
+                <button class="filter-btn" data-filter="photo">Photo Editing</button>
+                <button class="filter-btn" data-filter="video">Video Editing</button>
+                <button class="filter-btn" data-filter="graphic">Graphic Design</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid">
+                <!-- Photo Editing Projects -->
+                <div class="portfolio-item" data-category="photo" data-aos="zoom-in">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <p>Before/After Photo Edit</p>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Portrait Enhancement</h4>
+                                <p>Professional photo retouching and color correction</p>
+                                <div class="portfolio-tags">
+                                    <span>Adobe Photoshop</span>
+                                    <span>Lightroom</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="photo" data-aos="zoom-in">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <p>Product Photography Edit</p>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Product Photography</h4>
+                                <p>E-commerce product enhancement and background removal</p>
+                                <div class="portfolio-tags">
+                                    <span>Photoshop</span>
+                                    <span>Product Edit</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Editing Projects -->
+                <div class="portfolio-item" data-category="video" data-aos="zoom-in">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-video"></i>
+                            <p>Commercial Video Edit</p>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Commercial Video</h4>
+                                <p>Dynamic video editing with motion graphics</p>
+                                <div class="portfolio-tags">
+                                    <span>Premiere Pro</span>
+                                    <span>After Effects</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="video" data-aos="zoom-in">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-video"></i>
+                            <p>Music Video Edit</p>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Music Video</h4>
+                                <p>Creative video editing with visual effects</p>
+                                <div class="portfolio-tags">
+                                    <span>After Effects</span>
+                                    <span>Visual Effects</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Graphic Design Projects -->
+                <div class="portfolio-item" data-category="graphic" data-aos="zoom-in">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-palette"></i>
+                            <p>Logo Design</p>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Brand Identity</h4>
+                                <p>Complete logo and brand identity design</p>
+                                <div class="portfolio-tags">
+                                    <span>Illustrator</span>
+                                    <span>Branding</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="graphic" data-aos="zoom-in">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-palette"></i>
+                            <p>Social Media Graphics</p>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Social Media Design</h4>
+                                <p>Engaging social media graphics and templates</p>
+                                <div class="portfolio-tags">
+                                    <span>Photoshop</span>
+                                    <span>Social Media</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Skills & Expertise</h2>
+                <p>Mastering the tools that bring creativity to life</p>
+            </div>
+            
+            <div class="skills-content">
+                <div class="skills-category" data-aos="fade-up">
+                    <h3>Adobe Creative Suite</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-adobe"></i>
+                            </div>
+                            <h4>Adobe Illustrator</h4>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-adobe"></i>
+                            </div>
+                            <h4>Adobe After Effects</h4>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-adobe"></i>
+                            </div>
+                            <h4>Adobe Premiere Pro</h4>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="92"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-adobe"></i>
+                            </div>
+                            <h4>Adobe Photoshop</h4>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="98"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category" data-aos="fade-up">
+                    <h3>Creative Disciplines</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-camera"></i>
+                            </div>
+                            <h4>Photo Editing</h4>
+                            <p>Professional retouching, color correction, and enhancement</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-video"></i>
+                            </div>
+                            <h4>Video Editing</h4>
+                            <p>Cinematic editing, motion graphics, and visual effects</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <h4>Graphic Design</h4>
+                            <p>Logo design, branding, and visual identity creation</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-magic"></i>
+                            </div>
+                            <h4>Visual Effects</h4>
+                            <p>Advanced compositing and special effects creation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Get In Touch</h2>
+                <p>Ready to bring your creative vision to life? Let's collaborate!</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>your.email@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Your City, Country</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-behance"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">Creative</span>
+                    <span class="logo-accent">Portfolio</span>
+                </div>
+                <p>&copy; 2024 Creative Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
