@@ -39,11 +39,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 100) {
-        navbar.style.background = 'rgba(255, 255, 255, 0.98)';
-        navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+        navbar.classList.add('transparent');
     } else {
-        navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-        navbar.style.boxShadow = 'none';
+        navbar.classList.remove('transparent');
     }
 });
 
@@ -204,40 +202,85 @@ function showNotification(message, type = 'info') {
 window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
     const hero = document.querySelector('.hero');
-    const floatingElements = document.querySelectorAll('.floating-icon');
+    const canvasElements = document.querySelectorAll('.canvas-element');
+    const designTools = document.querySelectorAll('.tool');
     
     if (hero) {
         const rate = scrolled * -0.5;
-        floatingElements.forEach((element, index) => {
+        canvasElements.forEach((element, index) => {
             const speed = 0.5 + (index * 0.1);
-            element.style.transform = `translateY(${rate * speed}px)`;
+            element.style.transform = `translateY(${rate * speed}px) rotate(${rate * 0.1}deg)`;
+        });
+        
+        designTools.forEach((tool, index) => {
+            const speed = 0.3 + (index * 0.05);
+            tool.style.transform = `translateY(${rate * speed}px) scale(${1 + Math.sin(scrolled * 0.01) * 0.1})`;
         });
     }
 });
 
 // Typing effect for hero title
-function typeWriter(element, text, speed = 100) {
-    let i = 0;
-    element.innerHTML = '';
-    
-    function type() {
-        if (i < text.length) {
-            element.innerHTML += text.charAt(i);
-            i++;
-            setTimeout(type, speed);
+// function typeWriter(element, text, speed = 100) {
+//     let i = 0;
+//     element.innerHTML = '';
+//     function type() {
+//         if (i < text.length) {
+//             element.innerHTML += text.charAt(i);
+//             i++;
+//             setTimeout(type, speed);
+//         }
+//     }
+//     type();
+// }
+
+// // Initialize typing effect when page loads
+// window.addEventListener('load', () => {
+//     const heroTitle = document.querySelector('.hero-title');
+//     if (heroTitle) {
+//         const originalText = heroTitle.textContent;
+//         typeWriter(heroTitle, originalText, 50);
+//     }
+// });
+
+// Typewriter effect for dynamic headline
+const headlinePhrases = [
+    'Crafting <span class="highlight">Visual Stories</span>',
+    'Designs That <span class="highlight-2">Inspire</span>',
+    'Branding with <span class="highlight">Creativity</span>',
+    'Turning Ideas into <span class="highlight-2">Art</span>'
+];
+let headlineIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+let typeSpeed = 60;
+let pauseTime = 1200;
+const headlineEl = document.getElementById('headline-typed');
+
+function typeHeadline() {
+    const currentPhrase = headlinePhrases[headlineIndex];
+    let displayText = currentPhrase.substring(0, charIndex);
+    headlineEl.innerHTML = displayText;
+
+    if (!isDeleting && charIndex < currentPhrase.length) {
+        charIndex++;
+        setTimeout(typeHeadline, typeSpeed);
+    } else if (isDeleting && charIndex > 0) {
+        charIndex--;
+        setTimeout(typeHeadline, typeSpeed / 2);
+    } else {
+        if (!isDeleting) {
+            isDeleting = true;
+            setTimeout(typeHeadline, pauseTime);
+        } else {
+            isDeleting = false;
+            headlineIndex = (headlineIndex + 1) % headlinePhrases.length;
+            setTimeout(typeHeadline, 500);
         }
     }
-    
-    type();
 }
 
-// Initialize typing effect when page loads
-window.addEventListener('load', () => {
-    const heroTitle = document.querySelector('.hero-title');
-    if (heroTitle) {
-        const originalText = heroTitle.textContent;
-        typeWriter(heroTitle, originalText, 50);
-    }
+window.addEventListener('DOMContentLoaded', () => {
+    if (headlineEl) typeHeadline();
 });
 
 // Portfolio item click handlers

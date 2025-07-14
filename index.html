@@ -14,8 +14,8 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <span class="logo-text">Creative</span>
-                <span class="logo-accent">Portfolio</span>
+                <span class="logo-text">Safwen</span>
+                <span class="logo-accent">Souissi</span>
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
@@ -44,39 +44,113 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <!-- Animated SVG Blobs Background -->
+        <div class="hero-blobs">
+            <svg class="blob blob1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#FFD700" fill-opacity=".4" d="M44.8,-67.2C58.2,-59.2,68.7,-48.2,74.2,-35.7C79.7,-23.2,80.2,-9.1,77.2,4.7C74.2,18.5,67.7,32,58.1,43.2C48.5,54.4,35.8,63.3,22.1,68.2C8.4,73.1,-6.3,74,-20.2,70.1C-34.1,66.2,-47.2,57.5,-56.7,45.7C-66.2,33.9,-72.1,19,-73.2,3.7C-74.3,-11.6,-70.6,-27.2,-61.7,-38.7C-52.8,-50.2,-38.7,-57.6,-24.2,-64.1C-9.7,-70.6,5.2,-76.2,19.7,-75.2C34.2,-74.2,48.3,-66.2,44.8,-67.2Z" transform="translate(100 100)" />
+            </svg>
+            <svg class="blob blob2" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#4ecdc4" fill-opacity=".3" d="M38.6,-62.2C51.2,-54.2,62.2,-43.2,67.2,-30.7C72.2,-18.2,71.2,-4.1,67.2,8.7C63.2,21.5,56.2,33,46.6,41.7C37,50.4,24.7,56.2,11.2,61.2C-2.3,66.2,-16.9,70.4,-29.2,66.2C-41.5,62,-51.5,49.4,-59.2,36.2C-66.9,23,-72.2,9.2,-71.2,-4.1C-70.2,-17.4,-62.9,-30.2,-52.2,-38.2C-41.5,-46.2,-27.4,-49.4,-14.2,-56.2C-1,-63,11.3,-73.2,24.2,-74.2C37.1,-75.2,50.2,-67.2,38.6,-62.2Z" transform="translate(100 100)" />
+            </svg>
+            <svg class="blob blob3" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#764ba2" fill-opacity=".2" d="M44.8,-67.2C58.2,-59.2,68.7,-48.2,74.2,-35.7C79.7,-23.2,80.2,-9.1,77.2,4.7C74.2,18.5,67.7,32,58.1,43.2C48.5,54.4,35.8,63.3,22.1,68.2C8.4,73.1,-6.3,74,-20.2,70.1C-34.1,66.2,-47.2,57.5,-56.7,45.7C-66.2,33.9,-72.1,19,-73.2,3.7C-74.3,-11.6,-70.6,-27.2,-61.7,-38.7C-52.8,-50.2,-38.7,-57.6,-24.2,-64.1C-9.7,-70.6,5.2,-76.2,19.7,-75.2C34.2,-74.2,48.3,-66.2,44.8,-67.2Z" transform="translate(100 100)" />
+            </svg>
+        </div>
         <div class="hero-container">
             <div class="hero-content" data-aos="fade-up">
-                <h1 class="hero-title">
-                    Creative <span class="highlight">Visual Artist</span>
+                <div class="hero-badge">
+                    <span class="badge-text">Graphic Designer</span>
+                </div>
+                <h1 class="hero-title dynamic-headline">
+                    <span id="headline-typed"></span>
                 </h1>
+                <div class="color-palette-bar">
+                    <span class="color-dot" style="background:#FFD700"></span>
+                    <span class="color-dot" style="background:#4ecdc4"></span>
+                    <span class="color-dot" style="background:#764ba2"></span>
+                    <span class="color-dot" style="background:#ff6b6b"></span>
+                    <span class="color-dot" style="background:#ffa500"></span>
+                </div>
                 <p class="hero-subtitle">
-                    Transforming visions into stunning visuals through expert photo editing, 
-                    video production, and graphic design
+                    From concept to creation, I transform ideas into compelling visual narratives. 
+                    Specializing in brand identity, digital art, and creative design solutions that 
+                    make lasting impressions.
                 </p>
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <i class="fas fa-paint-brush"></i>
+                        <span>Creative Design</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-layer-group"></i>
+                        <span>Brand Identity</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-magic"></i>
+                        <span>Visual Effects</span>
+                    </div>
+                </div>
                 <div class="hero-buttons">
-                    <a href="#portfolio" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    <a href="#portfolio" class="btn btn-primary cta-animate">Explore My Work</a>
+                    <a href="#contact" class="btn btn-secondary cta-animate">Start a Project</a>
+                </div>
+                <!-- Showcase Carousel Placeholder -->
+                <div class="showcase-carousel">
+                    <div class="carousel-track">
+                        <div class="carousel-item"><img src="assets/AI.png" alt="Logo 1"></div>
+                        <div class="carousel-item"><img src="assets/AE.png" alt="Logo 2"></div>
+                        <div class="carousel-item"><img src="assets/PR.png" alt="Logo 3"></div>
+                        <div class="carousel-item"><img src="assets/PS.png" alt="Logo 4"></div>
+                    </div>
                 </div>
             </div>
             <div class="hero-visual" data-aos="fade-left">
-                <div class="floating-elements">
-                    <div class="floating-icon" style="--delay: 0s">
-                        <i class="fas fa-camera"></i>
+                <div class="design-canvas">
+                    <div class="canvas-element element-1">
+                        <div class="shape shape-circle"></div>
                     </div>
-                    <div class="floating-icon" style="--delay: 1s">
-                        <i class="fas fa-video"></i>
+                    <div class="canvas-element element-2">
+                        <div class="shape shape-square"></div>
                     </div>
-                    <div class="floating-icon" style="--delay: 2s">
-                        <i class="fas fa-palette"></i>
+                    <div class="canvas-element element-3">
+                        <div class="shape shape-triangle"></div>
                     </div>
-                    <div class="floating-icon" style="--delay: 3s">
-                        <i class="fas fa-magic"></i>
+                    <div class="canvas-element element-4">
+                        <div class="shape shape-hexagon"></div>
+                    </div>
+                    <div class="design-tools">
+                        <div class="tool tool-1">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="tool tool-2">
+                            <i class="fas fa-pen-fancy"></i>
+                        </div>
+                        <div class="tool tool-3">
+                            <i class="fas fa-bezier-curve"></i>
+                        </div>
+                        <div class="tool tool-4">
+                            <i class="fas fa-vector-square"></i>
+                        </div>
+                    </div>
+                    <div class="color-palette">
+                        <div class="color-swatch swatch-1"></div>
+                        <div class="color-swatch swatch-2"></div>
+                        <div class="color-swatch swatch-3"></div>
+                        <div class="color-swatch swatch-4"></div>
+                        <div class="color-swatch swatch-5"></div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="scroll-indicator">
             <div class="scroll-arrow"></div>
+        </div>
+        <div class="hero-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
         </div>
     </section>
 
@@ -90,17 +164,23 @@
             <div class="about-content">
                 <div class="about-text" data-aos="fade-right">
                     <h3>Creative Professional</h3>
-                    <p>
-                        I'm a dedicated visual artist with years of experience in transforming 
-                        raw content into compelling visual narratives. My expertise spans across 
-                        photo editing, video production, and graphic design, allowing me to 
-                        deliver comprehensive creative solutions.
+                    <p class="about-intro">
+                        Hi, I’m <strong>Safwen</strong>, a passionate 25 years old graphic designer and visual storyteller with 11+ years of experience. I thrive on transforming ideas into stunning visuals that connect, inspire, and leave a lasting impression.
                     </p>
+                    <h4>My Approach</h4>
                     <p>
-                        With mastery in Adobe Creative Suite including Illustrator, After Effects, 
-                        and Premiere Pro, I bring technical precision and artistic vision to every project. 
-                        Whether it's retouching portraits, creating dynamic video content, or designing 
-                        stunning graphics, I ensure each piece tells a story and leaves a lasting impact.
+                        I believe every project is a new adventure. I combine creativity, technical skill, and a deep understanding of branding to deliver designs that are not only beautiful but also meaningful and effective. Whether it’s a logo, a full brand identity, or digital art, I pour my heart into every detail.
+                    </p>
+                    <h4>What I Love</h4>
+                    <ul class="about-list">
+                        <li>Exploring bold color palettes and modern trends</li>
+                        <li>Creating unique logos and brand identities</li>
+                        <li>Bringing photos and videos to life with editing magic</li>
+                        <li>Collaborating with clients to turn visions into reality</li>
+                    </ul>
+                    <h4>Fun Fact</h4>
+                    <p>
+                        When I’m not designing, you’ll find me sketching, exploring art galleries, or experimenting with new creative tools!
                     </p>
                     <div class="stats">
                         <div class="stat">
@@ -118,10 +198,7 @@
                     </div>
                 </div>
                 <div class="about-image" data-aos="fade-left">
-                    <div class="image-placeholder">
-                        <i class="fas fa-user"></i>
-                        <p>Your Photo Here</p>
-                    </div>
+                    <img src="assets/safwen.jpeg" alt="Safwen Souissi" class="about-photo">
                 </div>
             </div>
         </div>
@@ -279,7 +356,7 @@
                     <div class="skills-grid">
                         <div class="skill-item">
                             <div class="skill-icon">
-                                <i class="fab fa-adobe"></i>
+                                <img src="assets/AI.png" alt="Adobe Illustrator" class="adobe-icon">
                             </div>
                             <h4>Adobe Illustrator</h4>
                             <div class="skill-level">
@@ -288,7 +365,7 @@
                         </div>
                         <div class="skill-item">
                             <div class="skill-icon">
-                                <i class="fab fa-adobe"></i>
+                                <img src="assets/AE.png" alt="Adobe After Effects" class="adobe-icon">
                             </div>
                             <h4>Adobe After Effects</h4>
                             <div class="skill-level">
@@ -297,7 +374,7 @@
                         </div>
                         <div class="skill-item">
                             <div class="skill-icon">
-                                <i class="fab fa-adobe"></i>
+                                <img src="assets/PR.png" alt="Adobe Premiere Pro" class="adobe-icon">
                             </div>
                             <h4>Adobe Premiere Pro</h4>
                             <div class="skill-level">
@@ -306,7 +383,7 @@
                         </div>
                         <div class="skill-item">
                             <div class="skill-icon">
-                                <i class="fab fa-adobe"></i>
+                                <img src="assets/PS.png" alt="Adobe Photoshop" class="adobe-icon">
                             </div>
                             <h4>Adobe Photoshop</h4>
                             <div class="skill-level">
@@ -369,16 +446,16 @@
                         </div>
                         <div class="contact-details">
                             <h4>Email</h4>
-                            <p>your.email@example.com</p>
+                            <p>cw.club102@gmail.com</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
+                            <i class="fab fa-whatsapp"></i>
                         </div>
                         <div class="contact-details">
-                            <h4>Phone</h4>
-                            <p>+1 (555) 123-4567</p>
+                            <h4>WhatsApp</h4>
+                            <p>+216 24 697 765</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -387,14 +464,13 @@
                         </div>
                         <div class="contact-details">
                             <h4>Location</h4>
-                            <p>Your City, Country</p>
+                            <p>Ariana Soghra 2083, Ariana, Tunisia</p>
                         </div>
                     </div>
                     <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-behance"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/souissi_safwen/" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/safwen-souissi/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.youtube.com/@bil_edits" class="social-link"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 
@@ -424,10 +500,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <span class="logo-text">Creative</span>
-                    <span class="logo-accent">Portfolio</span>
                 </div>
-                <p>&copy; 2024 Creative Portfolio. All rights reserved.</p>
             </div>
         </div>
     </footer>
